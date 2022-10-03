@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Online bibiloteka</title>
+    <title>Nova knjiga</title>
   </head>
   <body>
     <!-- Kontrolna tabla -->
@@ -13,7 +13,7 @@
       <div class="navigacija">
         <ul>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><img
                   src="/slike/pecat-logo.png"
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/bibliotekar.html">
+            <a href="/html/bibliotekar.html">
               <span class="ikonica"
                 ><ion-icon name="people-outline"></ion-icon
               ></span>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/ucenik.html">
+            <a href="/html/ucenik.html">
               <span class="ikonica"
                 ><ion-icon name="id-card-outline"></ion-icon
               ></span>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/knjige.html">
+            <a href="/html/knjige.html">
               <span class="ikonica"
                 ><ion-icon name="library-outline"></ion-icon
               ></span>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/autor.html">
+            <a href="/html/autor.html">
               <span class="ikonica"
                 ><ion-icon name="pencil-outline"></ion-icon
               ></span>
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/izdavanje-knjiga.html">
+            <a href="/html/izdavanje-knjiga.html">
               <span class="ikonica"
                 ><ion-icon name="file-tray-full-outline"></ion-icon
               ></span>
@@ -71,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/podesavanja.html">
+            <a href="/html/podesavanja.html">
               <span class="ikonica"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
@@ -81,7 +81,7 @@
         </ul>
       </div>
 
-      <!-- Main -->
+      <!-- Topbar -->
       <div class="main">
         <div class="topbar">
           <div class="hamburger">
@@ -95,62 +95,85 @@
             </div>
             <div class="dodaj">
               <div class="dodaj-korisnike">
-                <button><ion-icon name="add-outline"></ion-icon></button>
-                <!-- <a href="#"><ion-icon name="add-outline"></ion-icon></a> -->
-              </div>
-              <div class="dodaj-korisnike-dropdown">
-                <ul>
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                <ul class="sub-menu">
                   <li>
-                    <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                    <a href="/novi-clanovi/novi-bibliotekar.html"
                       >Bibliotekar</a
                     >
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    <a href="/novi-clanovi/novi-ucenik.html">Učenik</a>
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    <a href="/novi-clanovi/nova-knjiga.html">Knjiga</a>
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    <a href="/novi-clanovi/novi-autor.html">Autor</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <!-- Profil korisnika -->
           <div class="korisnik">
             <img
               src="/slike/korisnici/avatar1.png"
               alt="Profilna slika korisnika"
             />
-            <div class="dropdown-sadrzaj">
-              <a href="/html/profil/admin.html">
-                <span class="ikonica"
-                  ><ion-icon name="person-outline"></ion-icon
-                ></span>
-                Profil</a
-              >
-              <a href="#"
-                ><span class="ikonica"
-                  ><ion-icon name="log-out-outline"></ion-icon
-                ></span>
-                Log out</a
-              >
-            </div>
           </div>
         </div>
-      </div>
+
+        <!-- Novi član - naslov -->
+        <div class="nova-knjiga">
+          <div class="pregled">
+            <div class="naslov">
+              <h2>Nova knjiga</h2>
+            </div>
+          </div>
+
+          <div class="vise-opcija-li">
+            <ul class="knjige-opcije">
+                <li><a href="/html/novi-clanovi/nova-knjiga.html    ">Osnovni detalji</a></li>
+                <li><a href="/html/novi-clanovi/specifikacije.html">Specifikacije
+                </a></li>
+                <li><a href="/html/novi-clanovi/multimedija.html">Multimedija</a></li>
+            </ul>
+          </div>
+
+          <!-- Specifikacije -->
+          <div class="novi-clan">
+            <div class="novi-clan-forma">
+              <label for="br-strana">Broj strana:</label>
+              <input type="text" name="br-strana" id="br-strana" />
+              <label for="pismo">Pismo:</label>
+              <input type="text" name="pismo" id="pismo">
+              <label for="povez">Povez:</label>
+              <input type="text" name="povez" id="povez">
+              <label for="format">Format":</label>
+              <input type="text" name="format"" id="format"">
+              <label for="inter-st-bk-nr">International Standard Book Nr.:</label>
+              <input type="text" name="inter-st-bk-nr" id="inter-st-bk-nr">
+            </div>
+        </div>
+
+        <!-- Dugmad -->
+        <div class="novi-clanovi-dugmad">
+            <a href="/html/autor.html" class="ponisti-btn">Poništi</a>
+            <a href="/html/autor.html" class="sacuvaj-btn">Sačuvaj</a>
+        </div>
+        </div>
     </div>
 
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
     <script src="/app.js"></script>
-  </body>
+</body>
 </html>

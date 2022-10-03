@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Online bibiloteka</title>
+    <title>Novi član - bibliotekar</title>
   </head>
   <body>
     <!-- Kontrolna tabla -->
@@ -13,7 +13,7 @@
       <div class="navigacija">
         <ul>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><img
                   src="/slike/pecat-logo.png"
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/bibliotekar.html">
+            <a href="/html/bibliotekar.html">
               <span class="ikonica"
                 ><ion-icon name="people-outline"></ion-icon
               ></span>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/ucenik.html">
+            <a href="/html/ucenik.html">
               <span class="ikonica"
                 ><ion-icon name="id-card-outline"></ion-icon
               ></span>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/knjige.html">
+            <a href="/html/knjige.html">
               <span class="ikonica"
                 ><ion-icon name="library-outline"></ion-icon
               ></span>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/autor.html">
+            <a href="/html/autor.html">
               <span class="ikonica"
                 ><ion-icon name="pencil-outline"></ion-icon
               ></span>
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/izdavanje-knjiga.html">
+            <a href="/html/izdavanje-knjiga.html">
               <span class="ikonica"
                 ><ion-icon name="file-tray-full-outline"></ion-icon
               ></span>
@@ -71,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/podesavanja.html">
+            <a href="/html/podesavanja.html">
               <span class="ikonica"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
@@ -81,7 +81,7 @@
         </ul>
       </div>
 
-      <!-- Main -->
+      <!-- Topbar -->
       <div class="main">
         <div class="topbar">
           <div class="hamburger">
@@ -95,53 +95,98 @@
             </div>
             <div class="dodaj">
               <div class="dodaj-korisnike">
-                <button><ion-icon name="add-outline"></ion-icon></button>
-                <!-- <a href="#"><ion-icon name="add-outline"></ion-icon></a> -->
-              </div>
-              <div class="dodaj-korisnike-dropdown">
-                <ul>
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                <ul class="sub-menu">
                   <li>
-                    <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                    <a href="/novi-clanovi/novi-bibliotekar.html"
                       >Bibliotekar</a
                     >
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    <a href="/novi-clanovi/novi-ucenik.html">Učenik</a>
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    <a href="/novi-clanovi/nova-knjiga.html">Knjiga</a>
                   </li>
                   <li>
-                    <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    <a href="/novi-clanovi/novi-autor.html">Autor</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <!-- Profil korisnika -->
           <div class="korisnik">
             <img
               src="/slike/korisnici/avatar1.png"
               alt="Profilna slika korisnika"
             />
-            <div class="dropdown-sadrzaj">
-              <a href="/html/profil/admin.html">
-                <span class="ikonica"
-                  ><ion-icon name="person-outline"></ion-icon
-                ></span>
-                Profil</a
-              >
-              <a href="#"
-                ><span class="ikonica"
-                  ><ion-icon name="log-out-outline"></ion-icon
-                ></span>
-                Log out</a
-              >
-            </div>
           </div>
         </div>
+
+        <!-- Novi član - naslov -->
+        <div class="novi-bibliotekar">
+          <div class="pregled">
+            <div class="naslov">
+              <h2>Novi bibliotekar</h2>
+            </div>
+          </div>
+          <!-- Novi član - bibliotekar -->
+          <div class="novi-clan">
+            <div class="novi-clan-forma">
+              <label for="ime-prezime">Ime i prezime:</label>
+              <input type="text" name="ime-prezime" id="ime-prezime" />
+
+              <label for="tip">Tip korisnika:</label>
+              <input
+                type="text"
+                name="tip"
+                id="tip"
+                placeholder="Bibliotekar"
+              />
+
+              <label for="jmbg">JMBG:</label>
+              <input
+                type="number"
+                name="jmbg"
+                id="jmbg"
+                pattern="[0-12]{13}"
+                required
+              />
+
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" />
+
+              <label for="korisnicko-ime">Korisničko ime:</label>
+              <input type="text" name="korisnicko-ime" id="korisnicko-ime" />
+
+              <label for="lozinka">Lozinka:</label>
+              <input
+                type="password"
+                name="lozinka"
+                id="lozinka"
+              />
+
+              <label for="potvrda-lozinke">Potvrda lozinke:</label>
+              <input
+                type="password"
+                name="potvrda-lozinke"
+                id="potvrda-lozinke"
+              />
+            </div>
+            <div class="novi-clan-foto">
+              <label for="foto">Dodajte fotografiju:</label>
+              <input type="file" name="foto" id="foto" />
+            </div>
+          </div>
+          <!-- Dugmad -->
+        <div class="novi-clanovi-dugmad">
+          <a href="/html/bibliotekar.html" class="ponisti-btn">Poništi</a>
+          <a href="/html/bibliotekar.html" class="sacuvaj-btn">Sačuvaj</a>
       </div>
-    </div>
+        </div>
+      </div>
 
     <script
       type="module"
