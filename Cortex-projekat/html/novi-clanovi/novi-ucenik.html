@@ -81,49 +81,53 @@
         </ul>
       </div>
 
-      <!-- Topbar -->
+      <!-- Main -->
       <div class="main">
-        <div class="topbar">
-          <div class="hamburger">
-            <ion-icon name="menu-outline"></ion-icon>
-          </div>
-
-          <!-- Notifikacije i dodavanje korisnika -->
-          <div class="notifikacije-dodaj">
-            <div class="notifikacije">
-              <ion-icon name="notifications-outline"></ion-icon>
+        <header>
+          <div class="topbar">
+            <div class="hamburger">
+              <ion-icon name="menu-outline"></ion-icon>
             </div>
-            <div class="dodaj">
-              <div class="dodaj-korisnike">
-                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="/novi-clanovi/novi-bibliotekar.html"
-                      >Bibliotekar</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/novi-clanovi/novi-ucenik.html">Učenik</a>
-                  </li>
-                  <li>
-                    <a href="/novi-clanovi/nova-knjiga.html">Knjiga</a>
-                  </li>
-                  <li>
-                    <a href="/novi-clanovi/novi-autor.html">Autor</a>
-                  </li>
-                </ul>
+
+            <!-- Notifikacije i dodavanje korisnika -->
+            <div class="opcije-naloga">
+              <div class="notifikacije-dodaj">
+                <div class="notifikacije">
+                  <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="dodaj">
+                  <div class="dodaj-korisnike">
+                    <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                          >Bibliotekar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                      </li>
+                      <li>
+                        <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                      </li>
+                      <li>
+                        <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profil korisnika -->
+              <div class="korisnik">
+                <img
+                  src="/slike/korisnici/avatar1.png"
+                  alt="Profilna slika korisnika"
+                />
               </div>
             </div>
           </div>
-
-          <!-- Profil korisnika -->
-          <div class="korisnik">
-            <img
-              src="/slike/korisnici/avatar1.png"
-              alt="Profilna slika korisnika"
-            />
-          </div>
-        </div>
+        </header>
 
         <!-- Novi član - naslov -->
         <div class="novi-ucenik">
@@ -157,11 +161,7 @@
               <input type="text" name="korisnicko-ime" id="korisnicko-ime" />
 
               <label for="lozinka">Lozinka:</label>
-              <input
-                type="password"
-                name="lozinka"
-                id="lozinka"
-              />
+              <input type="password" name="lozinka" id="lozinka" />
 
               <label for="potvrda-lozinke">Potvrda lozinke:</label>
               <input
@@ -178,10 +178,10 @@
         </div>
         <!-- Dugmad -->
         <div class="novi-clanovi-dugmad">
-            <a href="/html/ucenik.html" class="ponisti-btn">Poništi</a>
-            <a href="/html/ucenik.html" class="sacuvaj-btn">Sačuvaj</a>
+          <a href="/html/ucenik.html" class="ponisti-btn">Poništi</a>
+          <a href="/html/ucenik.html" class="sacuvaj-btn">Sačuvaj</a>
         </div>
-        </div>
+      </div>
     </div>
 
     <script

@@ -13,7 +13,7 @@
       <div class="navigacija">
         <ul>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><img
                   src="/slike/pecat-logo.png"
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li>
-            <a href="./index.html">
+            <a href="/index.html">
               <span class="ikonica"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/bibliotekar.html">
+            <a href="/html/bibliotekar.html">
               <span class="ikonica"
                 ><ion-icon name="people-outline"></ion-icon
               ></span>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/ucenik.html">
+            <a href="/html/ucenik.html">
               <span class="ikonica"
                 ><ion-icon name="id-card-outline"></ion-icon
               ></span>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/knjige.html">
+            <a href="/html/knjige.html">
               <span class="ikonica"
                 ><ion-icon name="library-outline"></ion-icon
               ></span>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/autor.html">
+            <a href="/html/autor.html">
               <span class="ikonica"
                 ><ion-icon name="pencil-outline"></ion-icon
               ></span>
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/izdavanje-knjiga.html">
+            <a href="/html/izdavanje-knjiga.html">
               <span class="ikonica"
                 ><ion-icon name="file-tray-full-outline"></ion-icon
               ></span>
@@ -71,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="./html/podesavanja.html">
+            <a href="/html/podesavanja.html">
               <span class="ikonica"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
@@ -83,63 +83,216 @@
 
       <!-- Main -->
       <div class="main">
-        <div class="topbar">
-          <div class="hamburger">
-            <ion-icon name="menu-outline"></ion-icon>
-          </div>
+        <header>
+          <div class="topbar">
+            <div class="hamburger">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
 
-          <!-- Notifikacije i dodavanje korisnika -->
-          <div class="notifikacije-dodaj">
-            <div class="notifikacije">
-              <ion-icon name="notifications-outline"></ion-icon>
-            </div>
-            <div class="dodaj">
-              <div class="dodaj-korisnike">
-                <button><ion-icon name="add-outline"></ion-icon></button>
-                <!-- <a href="#"><ion-icon name="add-outline"></ion-icon></a> -->
+            <!-- Notifikacije i dodavanje korisnika -->
+            <div class="opcije-naloga">
+            <div class="notifikacije-dodaj">
+              <div class="notifikacije">
+                <ion-icon name="notifications-outline"></ion-icon>
               </div>
-              <div class="dodaj-korisnike-dropdown">
-                <ul>
-                  <li>
-                    <a href="/html/novi-clanovi/novi-bibliotekar.html"
-                      >Bibliotekar</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
-                  </li>
-                  <li>
-                    <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
-                  </li>
-                  <li>
-                    <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
-                  </li>
-                </ul>
+              <div class="dodaj">
+                <div class="dodaj-korisnike">
+                  <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                        >Bibliotekar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Profil korisnika -->
-          <div class="korisnik">
-            <img
-              src="/slike/korisnici/avatar1.png"
-              alt="Profilna slika korisnika"
-            />
-            <div class="dropdown-sadrzaj">
-              <a href="/html/profil/admin.html">
-                <span class="ikonica"
-                  ><ion-icon name="person-outline"></ion-icon
-                ></span>
-                Profil</a
-              >
-              <a href="#"
-                ><span class="ikonica"
-                  ><ion-icon name="log-out-outline"></ion-icon
-                ></span>
-                Log out</a
-              >
+
+            <!-- Profil korisnika -->
+            <div class="korisnik">
+              <img
+                src="/slike/korisnici/avatar1.png"
+                alt="Profilna slika korisnika"
+              />
             </div>
           </div>
         </div>
+        </header>
+
+        <!-- Komandna tabla-->
+        <div class="komandna-sadrzaj">
+          <div class="pregled">
+            <div class="naslov">
+              <h2>Komandna tabla</h2>
+            </div>
+          </div>
+
+          <!-- Aktivnosti -->
+          <div class="komandna-aktivnosti">
+            <div class="sadrzaj-aktivnosti">
+            <h3>Aktivnosti</h3>
+
+            <div class="aktivnost">
+              <div class="profilna">
+                <img src="/slike/korisnici/avatar3.png" alt="Profilna slika korisnika">
+              </div>
+                <div class="info-aktivnost">
+                  <div class="vrijeme">Potonje izdavanje knjige - prije 4 dana</div>
+                    <div class="opis-aktivnost">
+                      <p><a href="/html/profil/bibliotekar-panel.html">Nebojša Pavlović
+                      </a> je izdao/la knjigu <strong>"Karnera"</strong> učeniku <a href="/html/profil/ucenik-panel.html">Mileni Vučinić</a> dana <strong>21.02.2021</strong>.</p>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="aktivnost">
+              <div class="profilna">
+                <img src="/slike/korisnici/avatar8.png" alt="Profilna slika korisnika">
+              </div>
+                <div class="info-aktivnost">
+                  <div class="vrijeme">Potonje vraćanje knjige - prije 9 mjeseci</div>
+                    <div class="opis-aktivnost">
+                      <p><a href="/html/profil/ucenik-panel.html">Milena Vučinić
+                      </a> je vratio/la knjigu <strong>"Istorija crnogorskoga sudstva"</strong> bibliotekaru <a href="/html/profil/bibliotekar-panel.html">Nebojši Pavloviću</a> dana <strong>12.03.2020</strong>.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="aktivnost">
+              <div class="profilna">
+                <img src="/slike/korisnici/avatar3.png" alt="Profilna slika korisnika">
+              </div>
+                <div class="info-aktivnost">
+                  <div class="vrijeme">Potonje izdavanje knjige - prije 11 dana</div>
+                    <div class="opis-aktivnost">
+                      <p><a href="/html/profil/bibliotekar-panel.html">Nebojša Pavlović
+                      </a> je izdao/la knjigu <strong>"Lelejska gora"</strong> učeniku <a href="/html/profil/ucenik-panel.html">Mileni Vučinić</a> dana <strong>21.02.2021</strong>.</p>
+                    </div>
+                  </div>
+              </div>
+
+            <div class="aktivnost">
+              <div class="profilna">
+                <img src="/slike/korisnici/avatar3.png" alt="Profilna slika korisnika">
+              </div>
+                <div class="info-aktivnost">
+                  <div class="vrijeme">Potonje izdavanje knjige - prije 4 dana</div>
+                    <div class="opis-aktivnost">
+                      <p><a href="/html/profil/bibliotekar-panel.html">Nebojša Pavlović
+                      </a> je izdao/la knjigu <strong>"Poslanice"</strong> učeniku <a href="/html/profil/ucenik-panel.html">Nebojši Pavloviću</a> dana <strong>21.02.2021</strong>.</p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="aktivnost">
+                <div class="profilna">
+                  <img src="/slike/korisnici/avatar3.png" alt="Profilna slika korisnika">
+                </div>
+                  <div class="info-aktivnost">
+                    <div class="vrijeme">Nova knjiga - prije 9 mjeseci</div>
+                      <div class="opis-aktivnost">
+                        <p><a href="/html/profil/bibliotekar-panel.html">Nebojša Pavlović
+                        </a> je unio/jela knjigu <strong>"Crna Gora u doba Vojislavljevića"</strong> dana <strong>12.03.2020</strong>.</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="aktivnost">
+                  <div class="profilna">
+                    <img src="/slike/korisnici/avatar3.png" alt="Profilna slika korisnika">
+                  </div>
+                    <div class="info-aktivnost">
+                      <div class="vrijeme">Izbrisana knjiga - prije 11 dana</div>
+                        <div class="opis-aktivnost">
+                          <p><a href="/html/profil/bibliotekar-panel.html">Nebojša Pavlović
+                          </a> je izbrisao/la knjigu <strong>"Zlo proljeće"</strong> dana <strong>21.02.2021</strong>.</p>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="aktivnost">
+                    <div class="profilna">
+                      <img src="/slike/korisnici/avatar8.png" alt="Profilna slika korisnika">
+                    </div>
+                      <div class="info-aktivnost">
+                        <div class="vrijeme">Potonje vraćanje knjige - prije 9 mjeseci</div>
+                          <div class="opis-aktivnost">
+                            <p><a href="/html/profil/ucenik-panel.html">Milena Vučinić
+                            </a> je vratio/la knjigu <strong>"Dim u dim"</strong> bibliotekaru <a href="/html/profil/bibliotekar-panel.html">Nebojši Pavloviću</a> dana <strong>12.03.2020</strong>.</p>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Rezervacije knjiga -->
+                    <div class="komandna-rezervacije">
+                      <div class="rezervacije-sadrzaj">
+                      <h3>Rezervacije knjiga</h3>
+
+                      <div class="rezervacije">
+                        <div class="profilna">
+                          <img src="/slike/korisnici/avatar11.png" alt="Avatar korisnika">
+                        </div>
+                        <p class="ime-korisnika">Nikola Radunović</p>
+                        <p class="ime-knjige">"Ljubavnik Duklje"</p>
+                        <div class="datum-rezervacije">31.04.2019</div>
+                        <div class="dugmad">
+                          <ion-icon class="potvrdi" name="checkmark-outline"></ion-icon> 
+                          <ion-icon class="izbrisi" name="close-outline"></ion-icon>
+                        </div>
+                      </div>
+
+                      <div class="rezervacije">
+                        <div class="profilna">
+                          <img src="/slike/korisnici/avatar11.png" alt="Avatar korisnika">
+                        </div>
+                        <p class="ime-korisnika">Nikola Radunović</p>
+                        <p class="ime-knjige">"Zbog jedne krive kletve"</p>
+                        <div class="datum-rezervacije">05.11.2020</div>
+                        <div class="dugmad">
+                          <ion-icon class="potvrdi" name="checkmark-outline"></ion-icon> 
+                          <ion-icon class="izbrisi" name="close-outline"></ion-icon>
+                        </div>
+                      </div>
+
+                      <div class="rezervacije">
+                        <div class="profilna">
+                          <img src="/slike/korisnici/avatar11.png" alt="Avatar korisnika">
+                        </div>
+                        <p class="ime-korisnika">Nikola Radunović</p>
+                        <p class="ime-knjige">"Istorija muslimana Crne Gore 1445-1918"</p>
+                        <div class="datum-rezervacije">31.02.2021</div>
+                        <div class="dugmad">
+                          <ion-icon class="potvrdi" name="checkmark-outline"></ion-icon> 
+                          <ion-icon class="izbrisi" name="close-outline"></ion-icon>
+                        </div>
+                      </div>
+
+                      <div class="rezervacije">
+                        <div class="profilna">
+                          <img src="/slike/korisnici/avatar11.png" alt="Avatar korisnika">
+                        </div>
+                        <p class="ime-korisnika">Nikola Radunović</p>
+                        <p class="ime-knjige">"Gorski vijenac"</p>
+                        <div class="datum-rezervacije">31.04.2019</div>
+                        <div class="dugmad">
+                          <ion-icon class="potvrdi" name="checkmark-outline"></ion-icon> 
+                          <ion-icon class="izbrisi" name="close-outline"></ion-icon>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+
       </div>
     </div>
 

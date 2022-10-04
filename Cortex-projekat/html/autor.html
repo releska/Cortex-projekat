@@ -84,46 +84,52 @@
 
       <!-- Main -->
       <div class="main">
-        <div class="topbar">
-          <div class="hamburger">
-            <ion-icon name="menu-outline"></ion-icon>
-          </div>
-
-          <!-- Notifikacije i dodavanje korisnika -->
-          <div class="notifikacije-dodaj">
-            <div class="notifikacije">
-              <ion-icon name="notifications-outline"></ion-icon>
+        <header>
+          <div class="topbar">
+            <div class="hamburger">
+              <ion-icon name="menu-outline"></ion-icon>
             </div>
-            <div class="dodaj">
-              <div class="dodaj-korisnike">
-                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="./html/bibliotekar.html">Bibliotekar</a>
-                  </li>
-                  <li>
-                    <a href="./html/ucenik.html">Učenik</a>
-                  </li>
-                  <li>
-                    <a href="./html/knjige.html">Knjiga</a>
-                  </li>
-                  <li>
-                    <a href="./html/autor.html">Autor</a>
-                  </li>
-                </ul>
+
+            <!-- Notifikacije i dodavanje korisnika -->
+            <div class="opcije-naloga">
+            <div class="notifikacije-dodaj">
+              <div class="notifikacije">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </div>
+              <div class="dodaj">
+                <div class="dodaj-korisnike">
+                  <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                        >Bibliotekar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Profil korisnika -->
-          <div class="korisnik">
-            <img
-              src="/slike/korisnici/avatar1.png"
-              alt="Profilna slika korisnika"
-            />
+            <!-- Profil korisnika -->
+            <div class="korisnik">
+              <img
+                src="/slike/korisnici/avatar1.png"
+                alt="Profilna slika korisnika"
+              />
+            </div>
           </div>
         </div>
-
+        </header>
+        
         <!-- Naslov -->
         <div class="autori">
           <div class="pregled">
@@ -249,6 +255,26 @@
                       <ion-icon name="create-outline"></ion-icon>
                     </td>
                     <td class="izbrisi"><ion-icon name="trash-outline"></ion-icon></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="ime" class="checkbox">&nbsp;
+                  Jevrem Brković
+                  </td>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nisi quis sem condimentum feugiat et in nulla. Aliquam dapibus urna sed est tincidunt fermentum. Pellentesque magna nulla, efficitur et gravida nec, malesuada tincidunt turpis.</p></td>
+                  <td class="izmijeni">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </td>
+                  <td class="izbrisi"><ion-icon name="trash-outline"></ion-icon></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="ime" class="checkbox">&nbsp;
+                  Petar II Petrović Njegoš
+                  </td>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nisi quis sem condimentum feugiat et in nulla. Aliquam dapibus urna sed est tincidunt fermentum. Pellentesque magna nulla, efficitur et gravida nec, malesuada tincidunt turpis.</p></td>
+                  <td class="izmijeni">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </td>
+                  <td class="izbrisi"><ion-icon name="trash-outline"></ion-icon></td>
                 </tr>
             </tbody>
           </table>

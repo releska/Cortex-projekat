@@ -166,7 +166,6 @@ body {
   left: 80px;
 }
 
-
 .topbar {
   width: 100%;
   height: 60px;
@@ -190,18 +189,27 @@ body {
   cursor: pointer;
 }
 
-.topbar .notifikacije-dodaj {
-  position: relative;
-  top: 0;
+.main .topbar .podesavanja-naloga {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  /*top: 0;
   margin-right: 10px;
   padding: 5px 15px;
   width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  cursor: pointer;
+  height: 60px; */
+}
+
+.topbar .dodaj-korisnike {
+  margin-right: 10px;
+  padding: 5px 15px;
+}
+
+.podesavanja-naloga .nalog-korisnika img {
+  width: 50px;
+  border-radius: 50%;
 }
 
 .notifikacije-dodaj ion-icon {
@@ -225,16 +233,26 @@ body {
   align-items: center;
 }
 
-.sub-menu {
+header .opcije-naloga {
+  display: flex;
+  align-items: center;
+}
+
+header .notifikacije .dodaj {
+  display: flex;
+  align-items: center;
+}
+
+/* .sub-menu {
   display: none;
 }
 
 .dodaj-korisnike ul li:hover .sub-menu {
   display: block;
   position: absolute;
-}
+} */
 
-/** Profil korisnika **/
+/** KORISNIK **/
 
 .korisnik {
   display: inline-block;
@@ -277,7 +295,7 @@ body {
   background: var(--bez-svjetlija);
 }
 
-/** Naslov tabele, novi član i pretraga **/
+/** NASLOV TABELE, NOVI ČLAN I PRETRAGA **/
 
 .pregled {
   border-bottom: 2px solid var(--bez-tamnija);
@@ -342,7 +360,7 @@ input[type="text"] {
   border: none;
 }
 
-/** Tabela **/
+/** TABELA **/
 
 .tabela-container {
   margin: 10px 20px;
@@ -407,10 +425,10 @@ td .profilna img {
   height: 45px;
   width: 35px;
 }
-/** vratit se ovdje i uredit tabele: autor i knjige**/
+/** vratit se ovđe i uredit tabele: autor i knjige**/
 /* #tabela-autor tr td*/
 
-/** Novi članovi **/
+/** NOVI ČLANOVI **/
 .novi-clan {
   display: flex;
   justify-content: space-between;
@@ -454,7 +472,7 @@ td .profilna img {
   border-radius: 3.5px;
 }
 
-/** Dugmad sačuvaj-poništi **/
+/** DUGMAD SAČUVAJ/PONIŠTI **/
 .novi-clanovi-dugmad {
   padding: 7px 25px;
   margin: 10px;
@@ -485,7 +503,7 @@ td .profilna img {
   color: var(--bez-tamnija);
 }
 
-/** Lista opcija - sekcija Nova Knjiga **/
+/** LISTA OPCIJA - SEKCIJA NOVA KNJIGA **/
 .vise-opcija-li {
   display: flex;
   justify-content: space-between;
@@ -510,4 +528,154 @@ td .profilna img {
   justify-content: space-between;
   color: var(--crna-svjetlija);
   text-decoration: none;
+}
+
+/** PROFIL KORISNIKA **/
+.profil-korisnika novi-korisnik-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil-korisnika p {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.korisnik-data {
+  flex-basis: 50%;
+  padding: 0 20px;
+}
+
+.profil-korisnika label {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.profil-korisnika input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--crna-tamnija);
+  border-radius: 3.5px;
+}
+
+.korisnik-data .avatar {
+  flex-basis: 50%;
+  padding: 0 20px;
+}
+
+.korisnik-data .avatar img {
+  width: 25%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 0.5px solid var(--crna-tamnija);
+  border-radius: 4px;
+}
+
+/** AKTIVNOSTI **/
+.komandna-aktivnosti {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.komandna-aktivnosti h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.sadrzaj-aktivnosti {
+  flex-basis: 50%;
+  margin-right: 50px;
+}
+
+.sadrzaj-aktivnosti .aktivnost {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.aktivnost .profilna img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.aktivnost .info-aktivnost {
+  margin-left: 15px;
+}
+
+.aktivnost .info-aktivnost a {
+  color: var(--zelena-svjetlija);
+}
+
+.aktivnost .info-aktivnost a:hover {
+  color: var(--zelena-tamnija);
+}
+
+.info-aktivnost .vrijeme {
+  font-family: "Roboto Slab Light 300", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--crna-svjetlija);
+}
+
+.info-aktivnost .opis-aktivnost p {
+  font-size: 16px;
+}
+
+/** REZERVACIJE **/
+.komandna-rezervacije {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.komandna-rezervacije h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.rezervacije-sadrzaj {
+  flex-basis: 50%;
+  margin-left: 50px;
+}
+
+.rezervacije-sadrzaj .rezervacije {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.rezervacije img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.rezervacije .ime-korisnika {
+  padding: 25px;
+}
+
+.rezervacije .ime-knjige {
+  padding: 25px;
+}
+
+.rezervacije .datum-rezervacije {
+  padding: 25px;
+}
+
+.rezervacije .dugmad {
+  font-size: larger;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.dugmad .potvrdi {
+  color: var(--zelena-svjetlija);
+}
+
+.dugmad .potvrdi:hover {
+  color: var(--zelena-tamnija);
 }
