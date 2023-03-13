@@ -29,7 +29,11 @@ body {
   background-color: var(--bez-svjetlija);
 }
 
-/** KONTROLNA TABLA **/
+h2 {
+  font-size: 30px;
+}
+
+/** KOMANDNA TABLA **/
 
 .container {
   position: relative;
@@ -233,24 +237,27 @@ body {
   align-items: center;
 }
 
-header .opcije-naloga {
+.opcije-naloga {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifikacije .dodaj {
   display: flex;
   align-items: center;
 }
 
-header .notifikacije .dodaj {
-  display: flex;
-  align-items: center;
-}
 
-/* .sub-menu {
+
+ .sub-menu {
   display: none;
 }
 
-.dodaj-korisnike ul li:hover .sub-menu {
+.sub-menu  .dodaj-korisnike ul li:hover {
   display: block;
   position: absolute;
-} */
+}
 
 /** KORISNIK **/
 
@@ -358,6 +365,13 @@ input[type="text"] {
   font-size: 15px;
   padding: 5px 15px;
   border: none;
+}
+
+
+/** STATISTIKA **/
+#columnchart_material {
+  background-color: var(--bez-svjetlija);
+  
 }
 
 /** TABELA **/
@@ -478,6 +492,7 @@ td .profilna img {
   margin: 10px;
   border-radius: 4px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .novi-clanovi-dugmad a {
@@ -588,6 +603,7 @@ td .profilna img {
 .sadrzaj-aktivnosti {
   flex-basis: 50%;
   margin-right: 50px;
+  box-sizing: border-box;
 }
 
 .sadrzaj-aktivnosti .aktivnost {
@@ -639,41 +655,63 @@ td .profilna img {
 }
 
 .rezervacije-sadrzaj {
+  /* flex-basis: 50%;
+  margin-left: 50px; */
   flex-basis: 50%;
-  margin-left: 50px;
 }
 
-.rezervacije-sadrzaj .rezervacije {
+.rezervacije {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--crna-svjetlija);
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.rezervacije:hover {
+  background: var(--bez-tamnija);
+}
+
+.rezervacije div i {
+  margin: 0 10px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* .rezervacije-sadrzaj .rezervacije {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
+} */
 
 .rezervacije img {
   width: 35px;
   border-radius: 50%;
 }
 
-.rezervacije .ime-korisnika {
+/* .rezervacije .ime-korisnika {
   padding: 25px;
-}
+} */
 
-.rezervacije .ime-knjige {
+/* .rezervacije .ime-knjige {
   padding: 25px;
-}
+} */
 
-.rezervacije .datum-rezervacije {
+/* .rezervacije .datum-rezervacije {
   padding: 25px;
-}
+} */
 
-.rezervacije .dugmad {
+/* .rezervacije .dugmad {
   font-size: larger;
   padding: 25px;
   cursor: pointer;
-}
+} */
 
 .dugmad .potvrdi {
   color: var(--zelena-svjetlija);
+  cursor: pointer;
 }
 
 .dugmad .potvrdi:hover {
@@ -709,3 +747,195 @@ td .profilna img {
 .opcije-stranice {
   display: flex;
 }
+
+.podesavanja-tabs,
+.podesavanja-main-sadrzaj {
+  border-bottom: 2px solid var(--zelena-svjetlija);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.podesavanja-tabels,
+.podesavanja-main-sadrzaj 
+ul {
+  display: flex;
+}
+
+.podesavanja-tabs ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.podesavanja-tabs ul li {
+  padding: 0 20px 0 0;
+}
+
+.podesavanja-tabs ul li a{
+  color: var(--crna-tamnija);
+}
+
+.podesavanja-tabs ul li a:hover {
+  color: var(--crna-svjetlija);
+}
+
+.podesavanja-tabs,
+.podesavanja-main-sadrzaj, ul {
+  flex-direction: column;
+}
+
+.podesavanja-tabs,
+.podesavanja-main-sadrzaj, ul li {
+  margin-bottom: 15px;
+}
+
+.sadrzaj-podesavanja {
+  padding: 20px;
+}
+
+.sadrzaj-podesavanja a {
+  font-size: 18px;
+  color: var(--crna-tamnija);
+  background-color: var(--bez-tamnija);
+  padding: 3px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/** IZDAVANJE KNJIGA **/
+table tr td {
+  height: 60px;
+  padding: 5px 10px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 15px;
+}
+
+.naslovna-strana-knjige {
+  height: 45px;
+  width: 35px;
+}
+
+.izdavanje-knjiga-main-dio {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.tabela-za-izdavanje-knjige {
+  width: 85%;
+  margin-left: 50px;
+}
+
+
+.tabela-za-izdavanje-knjige .pretraga a {
+  border: none;
+}
+
+.tabela-za-izdavanje-knjige .pretraga input,
+.tabela-za-izdavanje-knjige .pretraga button {
+  border: none;
+}
+
+.tabela-za-izdavanje-knjige .input {
+  width: 200px;
+  border: 1px solid var(--crna-svjetlija);
+  margin-bottom: 15px;
+}
+
+.pretraga {
+  display: flex;
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.pretraga button {
+  font-size: 15px;
+  padding: 5px 15px;
+  border: none;
+}
+
+.radnje {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 25px;
+  width: 20%;
+  margin-right: auto;
+}
+
+.radnje a {
+  cursor: pointer;
+}
+
+.nav-info-1 li, 
+.nav-info-2 li {
+  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
+}
+
+.nav-info-1 a,
+.nav-info-2 a {
+  color: var(--crna-tamnija);
+  font-size: 15px;
+  padding: 2px 7px;
+}
+
+.nav-info-1 a:hover,
+.nav-info-2 a:hover {
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.nav-info-1 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--crna-svjetlija);
+  align-self: flex-start;
+}
+
+.nav-info-2 {
+  padding-top: 15px;
+}
+
+.knjige_content {
+  color: var(--crna-svjetlija);
+  border-radius: 3px;
+}
+
+.tabela-za-izdavanje-knjige {
+  margin-top: 20px;
+}
+
+.izdavanje-knjiga-tabs {
+  width: 80%;
+}
+
+.boja-prekoracenja {
+  color: var(--crvena);
+  font-weight: bold;
+}
+
+.status-rezervacije {
+  color: rgb(213, 182, 10);
+  font-weight: bold;
+}
+
+.status-izdato {
+  color: rgb(112, 130, 56);
+  font-weight: bold;
+}
+
+.status-isteklo {
+  color: var(--crvena);
+  font-weight: bold;
+}
+
+/** MOBILNA VERZIJA **/
+
+

@@ -235,8 +235,8 @@
                     </div>
 
                     <!-- Rezervacije knjiga -->
-                    <div class="komandna-rezervacije">
-                      <div class="rezervacije-sadrzaj">
+                    <!-- <div class="komandna-rezervacije"> -->
+                    <div class="rezervacije-sadrzaj">
                       <h3>Rezervacije knjiga</h3>
 
                       <div class="rezervacije">
@@ -270,7 +270,7 @@
                           <img src="/slike/korisnici/avatar11.png" alt="Avatar korisnika">
                         </div>
                         <p class="ime-korisnika">Nikola Radunović</p>
-                        <p class="ime-knjige">"Istorija muslimana Crne Gore 1445-1918"</p>
+                        <p class="ime-knjige">"Najveći zločin u istoriji"</p>
                         <div class="datum-rezervacije">31.02.2021</div>
                         <div class="dugmad">
                           <ion-icon class="potvrdi" name="checkmark-outline"></ion-icon> 
@@ -290,12 +290,20 @@
                           <ion-icon class="izbrisi" name="close-outline"></ion-icon>
                         </div>
                       </div>
+                      <div class="statistika">
+                        <h3>Statistika</h3>
+                      </div>
+                      <div id="columnchart_material" style="width: 600px; height: 250px; color: rgb(217, 211, 202);"></div>
+                      </div>
                       </div>
                     </div>
 
       </div>
     </div>
 
+    <script  
+      src="https://www.gstatic.com/charts/loader.js">
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -304,6 +312,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="/app.js"></script>
+    <script src="/scripts/app.js"></script>
   </body>
 </html>
