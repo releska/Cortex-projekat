@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Online bibiloteka</title>
+  </head>
+  <body>
+    <!-- Kontrolna tabla -->
+    <div class="container">
+      <div class="navigacija">
+        <ul>
+          <li>
+            <a href="/index.html">
+              <span class="ikonica"
+                ><img
+                  src="/slike/pecat-logo.png"
+                  alt="Pečat arhonta Petra - logo biblioteke"
+              /></span>
+              <span class="naziv">Biblioteka Duklja</span>
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="ikonica"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="naziv">Komandna tabla</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/bibliotekar.html">
+              <span class="ikonica"
+                ><ion-icon name="people-outline"></ion-icon
+              ></span>
+              <span class="naziv">Bibliotekar</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/ucenik.html">
+              <span class="ikonica"
+                ><ion-icon name="id-card-outline"></ion-icon
+              ></span>
+              <span class="naziv">Učenik</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/knjige.html">
+              <span class="ikonica"
+                ><ion-icon name="library-outline"></ion-icon
+              ></span>
+              <span class="naziv">Knjige</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/autor.html">
+              <span class="ikonica"
+                ><ion-icon name="pencil-outline"></ion-icon
+              ></span>
+              <span class="naziv">Autori</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/izdavanje-knjiga.html">
+              <span class="ikonica"
+                ><ion-icon name="file-tray-full-outline"></ion-icon
+              ></span>
+              <span class="naziv">Izdavanje knjiga</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/podesavanja.html">
+              <span class="ikonica"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="naziv">Podešavanja</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main -->
+      <div class="main">
+        <header>
+          <div class="topbar">
+            <div class="hamburger">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- Notifikacije i dodavanje korisnika -->
+            <div class="opcije-naloga">
+            <div class="notifikacije-dodaj">
+              <div class="notifikacije">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </div>
+              <div class="dodaj">
+                <div class="dodaj-korisnike">
+                  <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                        >Bibliotekar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profil korisnika -->
+            <div class="korisnik">
+              <img
+                src="/slike/korisnici/avatar1.png"
+                alt="Profilna slika korisnika"
+              />
+            </div>
+          </div>
+        </div>
+        </header>
+
+        <!-- Naslov -->
+        <div class="podesavanja-sadrzaj tabs-sadrzaj">
+          <div class="pregled">
+            <div class="naslov">
+              <h2>Podešavanja</h2>
+            </div>
+          </div>
+
+          <!-- Podešavanja - opcije -->
+          <div class="podesavanja-tabs">
+            <ul>
+              <li><a href="/html/podesavanja.html" class="opcije-hamburger">Polisa</a></li>
+              <li><a href="/html/podesavanja/kategorije.html" class="opcije-hamburger">Kategorije</a></li>
+              <li><a href="/html/podesavanja/zanrovi.html" class="opcije-hamburger">Žanrovi</a></li>
+              <li><a href="/html/podesavanja/povez.html" class="opcije-hamburger">Povez</a></li>
+              <li><a href="/html/podesavanja/format.html" class="opcije-hamburger">Format</a></li>
+              <li><a href="/html/podesavanja/pismo.html" class="opcije-hamburger">Pismo</a></li>
+            </ul>
+          </div>
+
+          <div class="podesavanja-main-sadrzaj">
+            <div class="podesavanja-sadrzaj">
+              <div class="rok-rezervacija">
+                <div class="rok">
+                  <h4>Rok za rezervaciju</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl id diam commodo aliquam vitae vitae lectus. Proin elementum metus sit amet tempus sollicitudin. Nulla vestibulum mattis vestibulum. Sed lacus magna, efficitur ut justo nec, gravida mollis diam. Vestibulum hendrerit nulla lectus, vitae porta massa ultrices ac. In sit amet arcu lorem.</p>
+                </div>
+
+                <div class="rok-dani">
+                  <input type="text" name="rok-dani"><span>dana</span>
+                </div>
+              </div>
+
+              <div class="rok-vracanja">
+                <div class="rok">
+                  <h4>Rok vraćanja</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl id diam commodo aliquam vitae vitae lectus. Proin elementum metus sit amet tempus sollicitudin. Nulla vestibulum mattis vestibulum. Sed lacus magna, efficitur ut justo nec, gravida mollis diam. Vestibulum hendrerit nulla lectus, vitae porta massa ultrices ac. In sit amet arcu lorem.</p>
+                </div>
+
+                <div class="rok-dani">
+                  <input type="text" name="rok-dani"><span>dana</span>
+                </div>
+              </div>
+
+              <div class="rok-konflikt">
+                <div class="rok">
+                  <h4>Rok konflikta</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl id diam commodo aliquam vitae vitae lectus. Proin elementum metus sit amet tempus sollicitudin. Nulla vestibulum mattis vestibulum. Sed lacus magna, efficitur ut justo nec, gravida mollis diam. Vestibulum hendrerit nulla lectus, vitae porta massa ultrices ac. In sit amet arcu lorem.</p>
+                </div>
+
+                <div class="rok-dani">
+                  <input type="text" name="rok-dani"><span>dana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../scripts/app.js"></script>
+    <script src="/scripts/podesavanja.js"></script>
+  </body>
+</html>

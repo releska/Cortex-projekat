@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Novi član - autor</title>
+  </head>
+  <body>
+    <!-- Kontrolna tabla -->
+    <div class="container">
+      <div class="navigacija">
+        <ul>
+          <li>
+            <a href="/index.html">
+              <span class="ikonica"
+                ><img
+                  src="/slike/pecat-logo.png"
+                  alt="Pečat arhonta Petra - logo biblioteke"
+              /></span>
+              <span class="naziv">Biblioteka Duklja</span>
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="ikonica"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="naziv">Komandna tabla</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/bibliotekar.html">
+              <span class="ikonica"
+                ><ion-icon name="people-outline"></ion-icon
+              ></span>
+              <span class="naziv">Bibliotekar</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/ucenik.html">
+              <span class="ikonica"
+                ><ion-icon name="id-card-outline"></ion-icon
+              ></span>
+              <span class="naziv">Učenik</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/knjige.html">
+              <span class="ikonica"
+                ><ion-icon name="library-outline"></ion-icon
+              ></span>
+              <span class="naziv">Knjige</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/autor.html">
+              <span class="ikonica"
+                ><ion-icon name="pencil-outline"></ion-icon
+              ></span>
+              <span class="naziv">Autori</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/izdavanje-knjiga.html">
+              <span class="ikonica"
+                ><ion-icon name="file-tray-full-outline"></ion-icon
+              ></span>
+              <span class="naziv">Izdavanje knjiga</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/podesavanja.html">
+              <span class="ikonica"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="naziv">Podešavanja</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main -->
+      <div class="main">
+        <header>
+          <div class="topbar">
+            <div class="hamburger">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- Notifikacije i dodavanje korisnika -->
+            <div class="opcije-naloga">
+            <div class="notifikacije-dodaj">
+              <div class="notifikacije">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </div>
+              <div class="dodaj">
+                <div class="dodaj-korisnike">
+                  <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/html/novi-clanovi/novi-bibliotekar.html"
+                        >Bibliotekar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-ucenik.html">Učenik</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/nova-knjiga.html">Knjiga</a>
+                    </li>
+                    <li>
+                      <a href="/html/novi-clanovi/novi-autor.html">Autor</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profil korisnika -->
+            <div class="korisnik">
+              <img
+                src="/slike/korisnici/avatar1.png"
+                alt="Profilna slika korisnika"
+              />
+            </div>
+          </div>
+        </div>
+        </header>
+
+        <!-- Novi član - naslov -->
+        <div class="novi-autor">
+          <div class="pregled">
+            <div class="naslov">
+              <h2>Novi autor</h2>
+            </div>
+          </div>
+          <!-- Novi član - autor -->
+          <div class="novi-clan">
+            <div class="novi-clan-forma">
+              <label for="ime-prezime">Ime i prezime:</label>
+              <input type="text" name="ime-prezime" id="ime-prezime" />
+              <label for="opis-autora">Opis autora:</label>
+              <textarea name="opis-autora" id="opis-autora" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <!-- Dugmad -->
+        <div class="novi-clanovi-dugmad">
+            <a href="/html/autor.html" class="ponisti-btn">Poništi</a>
+            <a href="/html/autor.html" class="sacuvaj-btn">Sačuvaj</a>
+        </div>
+        </div>
+    </div>
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
